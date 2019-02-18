@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Read CSV</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h1 class="header">Drag and drop or select a csv file</h1>
+
+      <form class="form" id="upload-form">
+        <input id="csvfile" class="file-input" type="file" name="csvfile" accept=".csv" />
+        <br />
+        <button id="submit-button" class="button button-blue" type="submit">Extract</button>
+      </form>
+      <div class="output-container">
+        <h3>OUTPUT</h3>
+        <table class="output-table" id="output-table"></table>
+      </div>
+    </div>
+    <!-- All of the Node.js APIs are available in this renderer process. -->
+    <script>
+      // You can also require other files to run in this process
+      require('./renderer.js');
+    </script>
+  </body>
+</html>

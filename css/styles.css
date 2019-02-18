@@ -1,0 +1,74 @@
+/* ------- CUSTOM FONTS --------- */
+@font-face {
+  font-family: 'Google sans';
+  src: url('../fonts/GoogleSans-Regular.ttf');
+}
+
+/* ------ BODY ---------- */
+body {
+  font-family: 'Google sans', Arial, sans-serif !important;
+}
+
+/* ------ CSV EXTRACT CONTAINER ----- */
+#app {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 800px;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+/* ------- FORM ------- */
+.form {
+  display: flex;
+  margin: 30px 0;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ----- BUTTON ----- */
+.button {
+  border: none;
+  border-radius: 6px;
+  padding: 1em 2em;
+  text-transform: uppercase;
+}
+
+.button-blue {
+  background-color: #1598cc;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* ------ CSV EXTRACT CONTAINER ----- */
+
+.output-container {
+  width: calc(100% - 5vw);
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #1598cc;
+  min-height: 300px;
+  max-height: 300px;
+  overflow: scroll;
+  border-radius: 6px;
+}
+
+.output-container::-webkit-scrollbar-track {
+  border-radius: 6px;
+  background-color: #f5f5f5;
+}
+
+.output-container::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f5f5;
+}
+
+.output-container::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: #1598cc;
+}
